@@ -46,5 +46,5 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "Libs - ${{ matrix.GO_ARCH }}"
+          name: "Libs ${{ matrix.GO_ARCH }}"
           path: "${{ github.workspace }}/output/libs"
