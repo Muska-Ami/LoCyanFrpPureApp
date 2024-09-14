@@ -6,6 +6,6 @@ URL="https://github.com/LoCyan-Team/LoCyanFrpPureApp/archive/refs/tags/${TAG_NAM
 echo "Downloading frpc sources ${TAG_NAME} from ${URL}"
 
 curl -L -o "src.tgz" $URL
-rm -rf frp-*
+rm -rf LoCyanFrpPureApp-*
 tar -xzvf src.tgz
 rm -f src.tgz

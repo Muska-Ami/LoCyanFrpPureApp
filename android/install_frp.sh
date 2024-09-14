@@ -16,9 +16,9 @@ function build() {
     cp -f ${FN} ${frp_dir}/../app/libs/$3
 }
 
-cp -f ./frp-*/conf/* ../app/src/main/assets/defaultData
+cp -f ./LoCyanFrpPureApp-*/conf/* ../app/src/main/assets/defaultData
 
-cd ./frp-*/cmd/$1
+cd ./LoCyanFrpPureApp-*/cmd/$1
 build $1 $2 $3
 
 # function build_all() {
