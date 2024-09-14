@@ -16,3 +16,7 @@
 ### Enjoy
 
 开启 Actions 并触发一次构建
+
+## 感谢
+
+- [jing332/FrpAndroid](https://github.com/jing332/FrpAndroid) 本项目构建思路及脚本来源
