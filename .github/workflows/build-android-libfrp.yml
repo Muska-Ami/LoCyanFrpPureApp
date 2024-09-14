@@ -25,6 +25,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: 1.20.3
+          cache: false
 
       - name: Build
         run: |
@@ -43,5 +44,5 @@ jobs:
       - name: Upload to Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: "${{ matrix.GO_ARCH }}"
+          name: "Libs - ${{ matrix.GO_ARCH }}"
           path: "${{ github.workspace }}/output/libs"
