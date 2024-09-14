@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - "master"
-    # paths-ignore:
-    #   - "*.md"
-    #   - "*.sh"
-    #   - "release.yaml"
-    #   - "sync_frp.yaml"
 
   workflow_dispatch:
 
@@ -30,7 +25,6 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: 1.20.3
-        #   cache-dependency-path: ${{ github.workspace }}/android/frp-*/go.sum
 
       - name: Build
         run: |
@@ -50,4 +44,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "${{ matrix.GO_ARCH }}"
-          path: "${{ github.workspace }}/output/libs"
+          path: "${{ github.workspace }}/app/libs"
