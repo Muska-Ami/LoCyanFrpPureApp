@@ -12,11 +12,11 @@ function build() {
     rm -f ${FN}
     go build -ldflags "-s -w" -o ${FN}
 
-    mkdir -p ${frp_dir}/../app/libs/$3
-    cp -f ${FN} ${frp_dir}/../app/libs/$3
+    mkdir -p ${frp_dir}/output/libs/$3
+    cp -f ${FN} ${frp_dir}/output/libs/$3
 }
 
-cp -f ./LoCyanFrpPureApp-*/conf/* ../app/src/main/assets/defaultData
+cp -f ./LoCyanFrpPureApp-*/conf/* ./output/src/main/assets/defaultData
 
 cd ./LoCyanFrpPureApp-*/cmd/$1
 build $1 $2 $3
